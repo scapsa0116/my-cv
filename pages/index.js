@@ -30,7 +30,6 @@ export default function Home() {
         <FirstButtons>
           <ButtonImg src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/000000/external-arrow-arrow-flatarticons-blue-flatarticons-5.png"/>
         </FirstButtons>
-
       </ButtonsContainer>
     </Wrapper>
   )
@@ -44,11 +43,12 @@ const Wrapper = tw.div`
 
 
 const ButtonsContainer = tw.div`
+border-r-2
 
 `
 const FirstButtons = tw.div`
-
+border-r-2
 `
 const ButtonImg = tw.img`
-h-10 w-10 border-white
+h-10 w-10 
 `
