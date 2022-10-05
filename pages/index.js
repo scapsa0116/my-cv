@@ -31,6 +31,21 @@ export default function Home() {
           <ButtonImg src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/000000/external-arrow-arrow-flatarticons-blue-flatarticons-5.png"/>
         </FirstButtons>
       </ButtonsContainer>
+
+
+      <SecondButtonsContainer>
+        <SecondButtons>
+          <ButtonImg/>
+        </SecondButtons>
+
+        <SecondButtons>
+          <ButtonImg/>
+        </SecondButtons>
+
+      </SecondButtonsContainer>
+
+
+
     </Wrapper>
   )
 }
@@ -38,17 +53,25 @@ export default function Home() {
 
 
 const Wrapper = tw.div`
-
+flex flex-1 flex-col
 `
 
 
 const ButtonsContainer = tw.div`
-border-r-2
+border-r-2 flex flex-col w-20 items-center space-x-1 py-2
 
 `
 const FirstButtons = tw.div`
-border-r-2
+py-3
 `
 const ButtonImg = tw.img`
 h-10 w-10 
+`
+
+const SecondButtonsContainer = tw.div`
+border-r-2 flex flex-col w-20 items-center space-x-1 py-20
+`
+
+const SecondButtons = tw.div`
+py-3
 `
