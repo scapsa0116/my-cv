@@ -32,19 +32,19 @@ export default function Home() {
         </FirstButtons>
       </ButtonsContainer>
 
-
+<ExtraContainer>
       <SecondButtonsContainer>
         <SecondButtons>
-          <ButtonImg/>
+          <ButtonImg src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-Avatar-round-icons-others-inmotus-design-7.png"/>
         </SecondButtons>
 
         <SecondButtons>
-          <ButtonImg/>
+          <ButtonImg src="https://img.icons8.com/fluency/48/000000/settings.png"/>
         </SecondButtons>
 
       </SecondButtonsContainer>
 
-
+      </ExtraContainer>
 
     </Wrapper>
   )
@@ -69,9 +69,14 @@ h-10 w-10
 `
 
 const SecondButtonsContainer = tw.div`
-border-r-2 flex flex-col w-20 items-center space-x-1 py-20
+border-r-2 flex flex-col w-20 items-center space-x-1 pt-20
 `
 
 const SecondButtons = tw.div`
-py-3
+py-3 
+`
+
+
+const ExtraContainer = tw.div`
+py-10 border-r-2 flex flex-col w-20
 `
