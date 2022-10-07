@@ -13,7 +13,12 @@ const allFiles = () => {
 
       
      <AllFilesContainer>
-here I am 
+      <ExplorerContainer>
+      <Header>Explorer</Header>
+      <ThreeDots>...</ThreeDots>
+      </ExplorerContainer>
+      
+
 
      </AllFilesContainer>
     
@@ -33,6 +38,17 @@ const MainButtons = tw.div`
 `
 
 const AllFilesContainer = tw.div` =
-bg-white border-spacing-y-20 w-40 border-r-2
+bg-gray-500 border-spacing-y-20 w-40 border-r-2 
 `
 
+const Header = tw.div` 
+text-white p-4
+
+`
+
+const ExplorerContainer = tw.div`
+flex flex-1 flex-row space-x-5 border
+`
+const ThreeDots = tw.div`
+text-white p-3 
+`
